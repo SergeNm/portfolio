@@ -55,6 +55,11 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
+  --primary-color: #fff;
+  --grey-color: #666;
+  --dar-blue-color: hsl(223deg 57% 12%);
+  --medium-font-size: 20px;
+  --small-font-size: 16px;
 }
 
 /*
@@ -80,6 +85,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  overflow-x: hidden; 
 }
 
 ul {
@@ -130,11 +136,11 @@ h4 {
   font-size: 0.875rem;
 }
 
-p {
+/* p {
   margin-bottom: 1.25rem;
   font: 24px/2 "Poppins", sans-serif;
   color: var(--clr-grey-5);
-}
+} */
 
 @media screen and (min-width: 800px) {
   .updates-text{
@@ -169,9 +175,9 @@ p {
 }
 
 /*  global classes */
-/* .container {
-  padding: 1.5em 3em;
-} */
+.main  {
+  width: 100%;
+}
 
 .clr-light{
   color: var(--clr-black);
@@ -228,7 +234,6 @@ p {
   .section-center {
     width: 95vw;
   }
-
 }
 
 
@@ -391,6 +396,70 @@ nav {
   place-content: center;
 }
 
+.aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media{
+  margin: 1em;
+}
+.social-btn{
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  float: left;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+} 
+.social-btn:hover{
+  width: 150px; 
+}
+.social-btn span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 10px;
+}
+.social-btn:nth-child(1):hover .social-icon {
+  background: #171515;
+}
+.social-btn:nth-child(2):hover .social-icon {
+  background: #0072b1;
+}
+.social-btn:nth-child(3):hover .social-icon {
+  background: #1DA1F2;
+}
+.social-btn:nth-child(1) span {
+  color: #171515;
+}
+.social-btn:nth-child(2) span {
+  color: #0072b1;
+}
+.social-btn:nth-child(3) span {
+  color: #1DA1F2;
+}
+.social-icon {
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.social-icon i {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.social-btn:hover i {
+  color: #fff;
+}
 
 .container h1 {
   color: var(--clr-white);
@@ -405,11 +474,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  .container p {
-    max-width: 40rem;
-  }
-
-
+ 
   .banner {
     grid-auto-flow: column;
     grid-template-columns: 1.2fr 1fr;
@@ -546,7 +611,7 @@ a {
   background: var(--clr-white);
 }
 
-footer {
+/* footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
 }
@@ -557,7 +622,7 @@ footer p {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   margin-bottom: 0;
-}
+} */
 
 .top-link {
   font-size: 1.25rem;
@@ -697,7 +762,12 @@ footer p {
   .post-image {
     height: 100px;
   }
-
+  .sm-hidden {
+    display: none;
+  }
+  .button {
+    width: 50%;
+  }
 }
 
 

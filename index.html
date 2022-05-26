@@ -9,8 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <link rel = "icon" type = "image/png" href = "./images/logo.png">
     <!-- styles -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/graphics.css" />
+    <link rel="stylesheet" href="css/sections.css" />
   </head>
 
   <body>
@@ -52,9 +55,10 @@
           </div>
         </div>
       </nav>
+
       <!-- banner -->
       <div class="banner container">
-        <div class="main">
+        <div class="main" id="content">
           <h2 class="clr-light">
             <span><b>@SergeNm,</b></span> <br />
             a passionate full-stack Software Developer
@@ -69,8 +73,8 @@
             </button>
             <div class="watch-link">
               <a href="#" id="myBtn"
-                ><img src="./images/play.png" alt="watch" />Watch my 3 min intro
-                video</a
+                ><img src="./images/play.png" alt="watch" /><span class="sm-hidden">Watch my 3 min intro
+                  video</span></a
               >
             </div>
 
@@ -80,19 +84,53 @@
               <div class="modal-content">
                 <span class="close">&times;</span>
                 <div class="iframe-container">
-                  <iframe style="margin:25%" width="560" height="315" src="https://www.youtube.com/embed/lSFYndDs6Mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe
+                    style="margin: 25%"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/lSFYndDs6Mk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="aside">
-          <img src="./images/profife.png" alt="profile" />
+        <div class="aside" id="showcase">
+          <div class="social-media">
+            <div class="social-btn">
+              <div class="social-icon"><i class="fab fa-github"></i></div>
+              <span>Github</span>
+            </div>
+            <div class="social-btn">
+              <div class="social-icon"><i class="fab fa-linkedin"></i></div>
+              <span>Linkedin</span>
+            </div>
+            <div class="social-btn">
+              <div class="social-icon"><i class="fab fa-twitter"></i></div>
+              <span>Twitter</span>
+            </div
+          </div>
         </div>
+        <img src="./images/profife.png" alt="profile" />
       </div>
+      <!-- bubbles -->
+    <div class="bubbles">
+      <img src="./images/1.png" alt="">
+      <img src="./images/2.png" alt="">
+      <img src="./images/3.png" alt="">
+      <img src="./images/1.png" alt="">
+      <img src="./images/2.png" alt="">
+      <img src="./images/3.png" alt="">
+      <img src="./images/1.png" alt="">
+
+    </div>
     </header>
     <!-- blog -->
-    <section id="about" class="section blog-section">
+    <section id="about" class="section blog-section reveal">
       <div class="title">
         <h4>
           Proficient in following languages/tools/frameworks <span></span>
@@ -118,8 +156,9 @@
     <!-- about -->
     <section id="contact" class="section page-section"></section>
     <!-- contact -->
-   
-    <section id="blog" class="section">
+
+    <!-- blog -->
+    <section id="blog" class="section reveal">
       <div class="title">
         <h2>Developer's <span>Posts</span></h2>
       </div>
@@ -131,7 +170,7 @@
               <img
                 src="./images/node-js-nodejs-number-symbol-text-recycling-symbol-transparent-png-1383018.png"
               />
-              <figcaption> REST API</figcaption>
+              <figcaption>REST API</figcaption>
             </figure>
             <div class="card-body">
               <!-- <h2 class="card-title">pizza</h2> -->
@@ -145,10 +184,8 @@
         <a href="#">
           <article class="card">
             <figure class="card-img">
-              <img
-                src="./images/reat.png"
-              />
-              <figcaption> Getting started with ReactJs</figcaption>
+              <img src="./images/reat.png" />
+              <figcaption>Getting started with ReactJs</figcaption>
             </figure>
             <div class="card-body">
               <!-- <h2 class="card-title">kebab</h2> -->
@@ -162,9 +199,7 @@
         <a href="#">
           <article class="card">
             <figure class="card-img">
-              <img
-                src="./images/dev ops.png"
-              />
+              <img src="./images/dev ops.png" />
               <figcaption>Dev ops</figcaption>
             </figure>
             <div class="card-body">
@@ -178,13 +213,125 @@
         </a>
       </div>
     </section>
+
+    <!-- about -->
+    <section class="section" style="background-color: #3734A9;">
+      <div class="reveal">
+       
+        <div id="c-section">
+          <section class="contact">
+              <div class="cont c-container">
+                  <div class="contact-text">
+                    <h5> Why Choose Us</h5> <br>
+                      <p>To the Individuals and companies. <br> I’m open for a work.</p>
+                      <p class="address">
+                        If you’d like me joining your team in your organization to empower <br/> the services you are delivering. Hit me I get you covered.
+                      </p>
+                      <!-- <h6>Email</h6>
+                      <p class="mail">nmugishaserge@gmail.com</p> -->
+                  </div>
+                  <div class="contact-form">
+                      <form>
+                          <!-- <label for="name">Name</label> -->
+                          <input type="text" placeholder="Name" name="name" id="name" required>
+                          <!-- <label for="email">Email</label> -->
+                          <input type="email" placeholder="Email" name="email" id="email"required>
+                          <!-- <label for="message">Message</label> -->
+                          <textarea name="message"  placeholder="Message"  id="message" cols="30" rows="5" required></textarea>
+                          <input type="submit" value="Send Message">
+                      </form>
+                  </div>
+              </div>
+          </section>
+      </div>    
+       
+        
+      </div>
+    </section>
+
     <!-- footer -->
-    <footer class="section">
+    <!-- <footer class="section">
       <p>
         copyright &copy; N. Mugisha Serge
         <span id="date"></span>. all rights reserved
       </p>
-    </footer>
+    </footer> -->
+    <footer id="site-footer" class="section">
+
+  
+      <section class="horizontal-footer-section" id="footer-middle-section">
+          
+          <div class="footer-columns">
+              <h1>Overview</h1>
+              <ul class="footer-column-menu" role="menu">
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">Services </a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">Pricing</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">Portfolio</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">News</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-columns">
+              <h1>Resources</h1>
+              <ul class="footer-column-menu" role="menu">
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">FAQ</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">Media</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">Guides</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">Free Resources</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">Testimonials</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-columns">
+              <h1>Information</h1>
+              <ul class="footer-column-menu" role="menu">
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">About Us</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">Terms of Use</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">Leave a Feedback</a>
+                  </li>
+              </ul>
+          </div>
+          <div id="footer-about" class="footer-columns footer-columns-large">
+            <h1>Join Our Newsletter</h1>
+            <form>
+              <input class="footer-input" type="text" required />
+              <a href="#" class="footer-button" role="button">Subscribe</a>
+            </form>
+            
+            <h1 style="font-size: .85rem;"> *  Will send you weekly updates for your better
+              software development</h1>
+        </div>
+      </section>
+      
+      <section class="horizontal-footer-section" id="footer-bottom-section">
+          <div id="footer-copyright-info">
+              &copy; SergeNm. <span id="date"></span>  All rights reserved.
+          </div>
+      </section>
+  
+  </footer>
+  
     <a class="scroll-link top-link" href="#home">
       <i class="fas fa-arrow-up"></i>
     </a>
@@ -192,5 +339,6 @@
     <!-- javascript -->
     <script src="js/main.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/animation.js"></script>
   </body>
 </html>
