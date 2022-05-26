@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SergeNm</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header class="main-header" id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./images/logo.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#blog" class="scroll-link">blog</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="#contact" class="scroll-link">contact</a>
+              </li>
+              <li>
+                <a href="html/login.html">
+                  <i
+                    class="fas fa-user-circle"
+                    style="font-size: 32px; color: #ccc"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner container">
+        <div class="main">
+          <h2 class="clr-light">
+            <span><b>@SergeNm,</b></span> <br />
+            a passionate full-stack Software Developer
+          </h2>
+          <h3>
+            5+ Years of experience in software development , and more than 3
+            years working in professional paced environment.
+          </h3>
+          <div class="main-links">
+            <button class="button" style="vertical-align: middle">
+              <span>Explore more </span>
+            </button>
+            <div class="watch-link">
+              <a href="#" id="myBtn"
+                ><img src="./images/play.png" alt="watch" />Watch my 3 min intro
+                video</a
+              >
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="iframe-container">
+                  <iframe style="margin:25%" width="560" height="315" src="https://www.youtube.com/embed/lSFYndDs6Mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aside">
+          <img src="./images/profife.png" alt="profile" />
+        </div>
+      </div>
+    </header>
+    <!-- blog -->
+    <section id="about" class="section blog-section">
+      <div class="title">
+        <h4>
+          Proficient in following languages/tools/frameworks <span></span>
+        </h4>
+        <div id="post-article" class="blog-posts-wrap"></div>
+      </div>
+      <img src="./images/tools.png" alt="tools" />
+      <div class="updates">
+        <div class="title">
+          <h2>Recent <span>Activities</span></h2>
+        </div>
+        <p class="updates-text">
+          Hands-on experience in developing mobile and web applications.
+          Currently I’m using nodejs to develop APIs and React for front-end
+          development.
+          <br />
+        </p>
+        <button class="button" style="vertical-align: middle">
+          <span>Explore more </span>
+        </button>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="contact" class="section page-section"></section>
+    <!-- contact -->
+   
+    <section id="blog" class="section">
+      <div class="title">
+        <h2>Developer's <span>Posts</span></h2>
+      </div>
+
+      <div class="cards-container">
+        <a href="#">
+          <article class="card">
+            <figure class="card-img">
+              <img
+                src="./images/node-js-nodejs-number-symbol-text-recycling-symbol-transparent-png-1383018.png"
+              />
+              <figcaption> REST API</figcaption>
+            </figure>
+            <div class="card-body">
+              <!-- <h2 class="card-title">pizza</h2> -->
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                eu gravida urna, in venenatis leo.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="#">
+          <article class="card">
+            <figure class="card-img">
+              <img
+                src="./images/reat.png"
+              />
+              <figcaption> Getting started with ReactJs</figcaption>
+            </figure>
+            <div class="card-body">
+              <!-- <h2 class="card-title">kebab</h2> -->
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                eu gravida urna, in venenatis leo.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="#">
+          <article class="card">
+            <figure class="card-img">
+              <img
+                src="./images/dev ops.png"
+              />
+              <figcaption>Dev ops</figcaption>
+            </figure>
+            <div class="card-body">
+              <!-- <h3 class="card-title">kebab</h3> -->
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                eu gravida urna, in venenatis leo.
+              </p>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; N. Mugisha Serge
+        <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
